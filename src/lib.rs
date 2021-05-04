@@ -96,7 +96,10 @@ pub fn print_to_stdout(json_data: Vec<Body>) {
             Green
                 .bold()
                 .paint(format!("HD_URL for {}", data.media_type)),
-            Blue.underline().paint(data.hdurl.unwrap())
+            Blue.underline().paint(match data.hdurl {
+                Some(u) => u,
+                None => "not available".to_owned(),
+            })
         );
         println!(
             "{}:  {}\n",
