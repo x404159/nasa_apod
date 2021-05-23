@@ -3,6 +3,10 @@
 This command line app is build using **APOD**(Astronomy Picture of the Day) api from NASA.
 i have build this app to practice rust programming language .
 
+## Output
+
+![nasa_apod output](https://i.imgur.com/i8FECSE.jpg "preview")
+
 ## How to run
 
 you will need to install rust and git on your system to run this cli app.
